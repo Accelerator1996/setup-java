@@ -8,6 +8,7 @@ import { LibericaDistributions } from './liberica/installer';
 import { MicrosoftDistributions } from './microsoft/installer';
 import { CorrettoDistribution } from './corretto/installer';
 import { OracleDistribution } from './oracle/installer';
+import { DragonwellDistribution } from './dragonwell/installer';
 
 enum JavaDistribution {
   Adopt = 'adopt',
@@ -19,7 +20,8 @@ enum JavaDistribution {
   JdkFile = 'jdkfile',
   Microsoft = 'microsoft',
   Corretto = 'corretto',
-  Oracle = 'oracle'
+  Oracle = 'oracle',
+  Dragonwell = 'dragonwell'
 }
 
 export function getJavaDistribution(
@@ -47,6 +49,8 @@ export function getJavaDistribution(
       return new CorrettoDistribution(installerOptions);
     case JavaDistribution.Oracle:
       return new OracleDistribution(installerOptions);
+    case JavaDistribution.Dragonwell:
+      return new DragonwellDistribution(installerOptions);
     default:
       return null;
   }

@@ -104,6 +104,7 @@ Currently, the following distributions are supported:
 | `microsoft` | Microsoft Build of OpenJDK | [Link](https://www.microsoft.com/openjdk) | [Link](https://docs.microsoft.com/java/openjdk/faq)
 | `corretto` | Amazon Corretto Build of OpenJDK | [Link](https://aws.amazon.com/corretto/) | [Link](https://aws.amazon.com/corretto/faqs/)
 | `oracle` | Oracle JDK | [Link](https://www.oracle.com/java/technologies/downloads/) | [Link](https://java.com/freeuselicense)
+| `dragonwell` | Alibaba Dragonwell JDK | [Link](https://dragonwell-jdk.io/) | [Link](https://www.aliyun.com/product/dragonwell/)
 
 **NOTE:** The different distributors can provide discrepant list of available versions / supported configurations. Please refer to the official documentation to see the list of supported versions.
 
@@ -226,6 +227,7 @@ In the example above multiple JDKs are installed for the same job. The result af
   - [Microsoft](docs/advanced-usage.md#Microsoft)
   - [Amazon Corretto](docs/advanced-usage.md#Amazon-Corretto)
   - [Oracle](docs/advanced-usage.md#Oracle)
+  - [Alibaba Dragonwell](docs/advanced-usage.md#Alibaba-Dragonwell)
 - [Installing custom Java package type](docs/advanced-usage.md#Installing-custom-Java-package-type)
 - [Installing custom Java architecture](docs/advanced-usage.md#Installing-custom-Java-architecture)
 - [Installing custom Java distribution from local file](docs/advanced-usage.md#Installing-Java-from-local-file)
