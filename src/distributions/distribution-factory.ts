@@ -7,6 +7,7 @@ import { TemurinDistribution, TemurinImplementation } from './temurin/installer'
 import { LibericaDistributions } from './liberica/installer';
 import { MicrosoftDistributions } from './microsoft/installer';
 import { CorrettoDistribution } from './corretto/installer';
+import { DragonwellDistribution } from './dragonwell/installer';
 
 enum JavaDistribution {
   Adopt = 'adopt',
@@ -17,7 +18,8 @@ enum JavaDistribution {
   Liberica = 'liberica',
   JdkFile = 'jdkfile',
   Microsoft = 'microsoft',
-  Corretto = 'corretto'
+  Corretto = 'corretto',
+  Dragonwell = 'dragonwell'
 }
 
 export function getJavaDistribution(
@@ -43,6 +45,8 @@ export function getJavaDistribution(
       return new MicrosoftDistributions(installerOptions);
     case JavaDistribution.Corretto:
       return new CorrettoDistribution(installerOptions);
+    case JavaDistribution.Dragonwell:
+      return new DragonwellDistribution(installerOptions);
     default:
       return null;
   }
